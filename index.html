@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable-no, initial-scale=1.0, maximum-scale=1.0. minimum-scale=1.0">
+    <title>Alura Challenge</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+    <main class="presentacion">
+        <img class="logo" src="Logo.png" alt="Logo de Alura">
+
+        <div id="caja_texto" class="presentacion_caja">
+            <textarea rows="4" cols="100" class="presentacion_caja_texto" id="texto"
+                placeholder="Ingresa el texto"></textarea>
+        </div>
+
+        <div id="rectangulo" class="rectangulo">
+            <img class="presentacion_indicaciones_muñeco" src="Muñeco.png" alt="Imagen de muñeco">
+
+            <div id="contenedorTextoParaCambiar" class="presentacion_indicaciones">
+
+                <p id="textoParaCambiar" class="presentacion_indicaciones_texto1"></p>
+                
+                <p id="textoParaCambiar2" class="presentacion_indicaciones_texto2"></p>
+
+                <button id="botonCopiar" onclick="copiarTexto()" class="boton_copiar">Copiar</button>
+        </div>
+
+        </div>
+        <div class="presentacion_botones">
+            <img src="bi_exclamation-circle-fill.png" class="presentacion_botones_imagen" alt="Icono de advertencia">
+            <p id="remplazarObjetos" class="presentacion_botones_texto">
+                Solo letras minúsculas y sin acentos
+            </p>
+        </div>
+
+        <div class="apartado_botones">
+            <button onclick="encriptarTexto()" class="presentacion_boton_encriptar" id="boton_encriptarTexto">Encriptar</button>
+            <button onclick="desencriptarTexto()" class="presentacion_boton_desencriptar" id="boton_desencriptarTexto">Desencriptar</button>
+        </div>
+
+    </main>
+    <script src="java.js"></script>
+</body>
+
+</html>
